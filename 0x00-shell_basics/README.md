@@ -1,3 +1,3 @@
- #!/bin/bash
- ## List of script that working directry
+
+ ## List of script that working with directorys
 
