@@ -2,7 +2,7 @@
 
 # Learning Objectives 
 
-# Shell, I/O Redirection
+_ Shell, I/O Redirection _
 
 What do the commands head, tail, find, wc, sort, uniq, grep, tr do
 How to redirect standard output to a file
