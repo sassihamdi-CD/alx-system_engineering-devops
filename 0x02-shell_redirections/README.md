@@ -1,6 +1,6 @@
-### This is Bash projects
+# This is Bash projects
 
-# Learning Objectives 
+## Learning Objectives 
 
 ## *Shell, I/O Redirection*
 
