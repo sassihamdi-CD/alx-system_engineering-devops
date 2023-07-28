@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This it will autommate chomd u+x for all file
+
+chmod u+x *
