@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script for help me with permission files 
+
+chmod u+x *
