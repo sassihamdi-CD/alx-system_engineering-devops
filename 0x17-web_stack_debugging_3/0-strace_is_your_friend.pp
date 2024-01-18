@@ -1,31 +1,10 @@
-# 0-strace_is_your_friend.pp
+# A puppet manuscript to replace a line in a file on a server
 
-# Install strace package (if not already installed)
-package { 'strace':
-  ensure => installed,
+$file_to_edit = '/var/www/html/wp-settings.php'
+
+#replace line containing "phpp" with "php"
+
+exec { 'replace_line':
+  command => "sed -i 's/phpp/php/g' ${file_to_edit}",
+  path    => ['/bin','/usr/bin']
 }
-
-# Run strace on the Apache process
-exec { 'strace_apache':
-  command => 'strace -o /tmp/strace_output.txt -p $(pgrep apache2)',
-  path    => '/usr/bin',
-  user    => 'root',
-  require => Package['strace'],
-}
-
-# Fix the issue (replace 'your_fix_command' with the actual command to fix the problem)
-exec { 'fix-wordpress':
-  command     => 'your_fix_command',
-  path        => '/usr/bin',
-  user        => 'root',
-  refreshonly => true,
-  subscribe   => Exec['strace_apache'],
-}
-
-# Restart Apache after fixing the issue
-service { 'apache2':
-  ensure     => running,
-  enable     => true,
-  subscribe  => Exec['fix-wordpress'],
-}
-
