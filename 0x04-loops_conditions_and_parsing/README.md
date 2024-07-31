@@ -72,34 +72,19 @@ Requirements:
 SSH and RSA keys will be covered in depth in a later project.
 
 Repo:
+## 0x04-loops_conditions_and_parsing
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 0-RSA_public_key.pub
+This directory covers loops, conditions, and parsing in shell scripts.
 
-### 1. For Best School loop (mandatory)
-
-Write a Bash script that displays "Best School" 10 times.
-
-Requirement:
-
-- You must use the for loop (while and until are forbidden)
-
-Example:
-```bash
-sassihamdi@ubuntu$ head -n 2 1-for_best_school 
-#!/usr/bin/env bash
-# This script is displaying "Best School" 10 times
-sylvain@ubuntu$ ./1-for_best_school 
-Best School
-Best School
-Best School
-Best School
-Best School
-Best School
-Best School
-Best School
-Best School
-Best School
-sassihamdi@ubuntu$ 
-
+### Files
+- **0-RSA_public_key.pub**: A file containing an RSA public key.
+- **1-for_best_school**: A script that displays `Best School` 10 times using a `for` loop.
+- **2-while_best_school**: A script that displays `Best School` 10 times using a `while` loop.
+- **3-until_best_school**: A script that displays `Best School` 10 times using an `until` loop.
+- **4-if_9_say_hi**: A script that displays `Best School` 10 times, but for the 9th iteration, it displays `Hi` instead.
+- **5-4_bad_luck_8_is_your_chance**: A script that loops from 1 to 10 and displays `bad luck` for the 4th iteration, `good luck` for the 8th iteration, and `Best School` for the other iterations.
+- **6-superstitious_numbers**: A script that displays numbers from 1 to 20, but for multiples of 4, it displays `bad luck`, for multiples of 8, it displays `good luck`, and for other numbers, it displays the number.
+- **7-clock**: A script that displays the time for 12 hours and 59 minutes, starting from 00:00.
+- **8-for_ls**: A script that displays the content of the current directory in a `for` loop.
+- **9-to_file_or_not_to_file**: A script that gives information about the `school` file.
+- **10-fizzbuzz**: A script that displays numbers from 1 to 100, but for multiples of 3, it displays `Fizz`, for multiples of 5, it displays `Buzz`, and for multiples of both 3 and 5, it displays `FizzBuzz`.
